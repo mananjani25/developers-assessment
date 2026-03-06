@@ -1,0 +1,74 @@
+// WorkLog Settlement System — Database Schema
+// Generated for: FastAPI + SQLModel + PostgreSQL
+
+Table user {
+  id uuid [pk, default: `uuid_generate_v4()`]
+  email varchar(255) [unique, not null]
+  is_active boolean [default: true]
+  is_superuser boolean [default: false]
+  full_name varchar(255)
+  hourly_rate float [default: 25.0]
+  hashed_password varchar [not null]
+}
+
+Table item {
+  id uuid [pk, default: `uuid_generate_v4()`]
+  title varchar(255) [not null]
+  description varchar(255)
+  owner_id uuid [not null, ref: > user.id]
+}
+
+Table worklog {
+  id uuid [pk, default: `uuid_generate_v4()`]
+  user_id uuid [not null, ref: > user.id]
+  title varchar(255) [not null]
+  description varchar(1024)
+  created_at timestamp [default: `now()`]
+}
+
+Table time_segment {
+  id uuid [pk, default: `uuid_generate_v4()`]
+  worklog_id uuid [not null, ref: > worklog.id]
+  start_time timestamp [not null]
+  end_time timestamp [not null]
+  is_active boolean [default: true]
+  created_at timestamp [default: `now()`]
+}
+
+Table adjustment {
+  id uuid [pk, default: `uuid_generate_v4()`]
+  worklog_id uuid [not null, ref: > worklog.id]
+  amount float [default: 0.0]
+  reason varchar(1024)
+  adjustment_type adjustment_type_enum [not null, note: 'DEDUCTION or BONUS']
+  created_at timestamp [default: `now()`]
+}
+
+Table remittance {
+  id uuid [pk, default: `uuid_generate_v4()`]
+  user_id uuid [not null, ref: > user.id]
+  total_amount float [default: 0.0]
+  status remittance_status_enum [not null, default: 'PENDING', note: 'PENDING, SUCCESS, FAILED, CANCELLED']
+  period_label varchar(64) [not null]
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+}
+
+Table remittance_line_item {
+  id uuid [pk, default: `uuid_generate_v4()`]
+  remittance_id uuid [not null, ref: > remittance.id]
+  worklog_id uuid [not null, ref: > worklog.id]
+  amount_settled float [default: 0.0]
+}
+
+Enum adjustment_type_enum {
+  DEDUCTION
+  BONUS
+}
+
+Enum remittance_status_enum {
+  PENDING
+  SUCCESS
+  FAILED
+  CANCELLED
+}

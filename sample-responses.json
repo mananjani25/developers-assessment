@@ -1,0 +1,327 @@
+{
+  "list_all_worklogs": {
+    "status_code": 200,
+    "body": {
+      "data": [
+        {
+          "id": "08249458-a4dc-475b-abc9-83aed45e1334",
+          "user_id": "3f99ee5e-266c-4a69-b820-fecc2d2dbc0c",
+          "title": "API Integration Module",
+          "description": "Building REST API integration with third-party service",
+          "created_at": "2026-02-24T07:59:12.817325",
+          "amount": 130.0,
+          "remittance_status": "REMITTED",
+          "time_segments": [
+            {
+              "id": "22e62573-3b45-4fd9-a443-92b81fb64db7",
+              "start_time": "2026-02-23T23:59:12.817325",
+              "end_time": "2026-02-24T02:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823136"
+            },
+            {
+              "id": "6c52d1f2-fa3a-443f-822a-6577aad19908",
+              "start_time": "2026-02-25T01:59:12.817325",
+              "end_time": "2026-02-25T03:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823227"
+            },
+            {
+              "id": "63857baa-3211-4f4b-bce3-0eaa9030ce2f",
+              "start_time": "2026-02-26T03:59:12.817325",
+              "end_time": "2026-02-26T05:59:12.817325",
+              "is_active": false,
+              "created_at": "2026-03-06T07:59:12.823276"
+            }
+          ],
+          "adjustments": [
+            {
+              "id": "3aebbe97-07df-49b2-b503-62e1c5f65d51",
+              "amount": 20.0,
+              "reason": "Minor quality issue in API error handling",
+              "adjustment_type": "DEDUCTION",
+              "created_at": "2026-03-06T07:59:12.823646"
+            }
+          ]
+        },
+        {
+          "id": "d1f9648b-5705-4448-9e4e-8fbec0804d54",
+          "user_id": "3f99ee5e-266c-4a69-b820-fecc2d2dbc0c",
+          "title": "Unit Test Suite",
+          "description": "Writing comprehensive unit tests for payment module",
+          "created_at": "2026-03-01T07:59:12.817325",
+          "amount": 120.0,
+          "remittance_status": "REMITTED",
+          "time_segments": [
+            {
+              "id": "04fa48e1-0cc3-49fc-b4f8-b4696c60173c",
+              "start_time": "2026-02-28T21:59:12.817325",
+              "end_time": "2026-03-01T01:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823328"
+            }
+          ],
+          "adjustments": []
+        },
+        {
+          "id": "f69f4063-2323-4210-ba4c-55d48a010f48",
+          "user_id": "a4383343-b2ee-43bb-930f-67c2421d5ecc",
+          "title": "Database Schema Redesign",
+          "description": "Migrating from legacy schema to normalized design",
+          "created_at": "2026-02-26T07:59:12.817325",
+          "amount": 410.0,
+          "remittance_status": "REMITTED",
+          "time_segments": [
+            {
+              "id": "85285292-410a-4bea-b814-cfce31b3dcd5",
+              "start_time": "2026-02-25T22:59:12.817325",
+              "end_time": "2026-02-26T03:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823371"
+            },
+            {
+              "id": "08f82c2e-682b-42cf-ac82-495e95a1d988",
+              "start_time": "2026-02-27T00:59:12.817325",
+              "end_time": "2026-02-27T03:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823412"
+            }
+          ],
+          "adjustments": [
+            {
+              "id": "d4939137-9d93-41df-bc4d-6ad950ee50c2",
+              "amount": 50.0,
+              "reason": "Early delivery bonus",
+              "adjustment_type": "BONUS",
+              "created_at": "2026-03-06T07:59:12.823710"
+            }
+          ]
+        },
+        {
+          "id": "1732c503-8b89-495d-b91c-e2fa246c2b5c",
+          "user_id": "a4383343-b2ee-43bb-930f-67c2421d5ecc",
+          "title": "Performance Optimization",
+          "description": "Optimizing slow queries and adding caching layer",
+          "created_at": "2026-03-03T07:59:12.817325",
+          "amount": 90.0,
+          "remittance_status": "REMITTED",
+          "time_segments": [
+            {
+              "id": "bf368b7a-4e56-413d-a5f3-9624d6eee677",
+              "start_time": "2026-03-03T01:59:12.817325",
+              "end_time": "2026-03-03T03:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823453"
+            }
+          ],
+          "adjustments": []
+        },
+        {
+          "id": "b5c322fb-4faa-4dac-a9f0-b2960d3e890f",
+          "user_id": "9846c3df-d3fd-473a-be4f-eae6365bd365",
+          "title": "Security Audit Report",
+          "description": "Conducting security audit and documenting findings",
+          "created_at": "2026-02-27T07:59:12.817325",
+          "amount": 320.0,
+          "remittance_status": "REMITTED",
+          "time_segments": [
+            {
+              "id": "3852562e-8821-4883-b14d-4bc98f3b679e",
+              "start_time": "2026-02-26T23:59:12.817325",
+              "end_time": "2026-02-27T03:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823492"
+            },
+            {
+              "id": "2b84c3db-603a-439f-a6b5-e828a5402e86",
+              "start_time": "2026-02-28T00:59:12.817325",
+              "end_time": "2026-02-28T03:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823533"
+            }
+          ],
+          "adjustments": [
+            {
+              "id": "ebf653bf-48c7-4efc-a774-ee87262b05e5",
+              "amount": 30.0,
+              "reason": "Incomplete compliance section",
+              "adjustment_type": "DEDUCTION",
+              "created_at": "2026-03-06T07:59:12.823753"
+            }
+          ]
+        }
+      ],
+      "count": 5
+    }
+  },
+  "generate_remittances_for_all_users": {
+    "status_code": 200,
+    "body": {
+      "message": "Settlement run completed. 0 user(s) processed.",
+      "remittances": [],
+      "total_users_processed": 0
+    }
+  },
+  "list_worklogs_remitted": {
+    "status_code": 200,
+    "body": {
+      "data": [
+        {
+          "id": "08249458-a4dc-475b-abc9-83aed45e1334",
+          "user_id": "3f99ee5e-266c-4a69-b820-fecc2d2dbc0c",
+          "title": "API Integration Module",
+          "description": "Building REST API integration with third-party service",
+          "created_at": "2026-02-24T07:59:12.817325",
+          "amount": 130.0,
+          "remittance_status": "REMITTED",
+          "time_segments": [
+            {
+              "id": "22e62573-3b45-4fd9-a443-92b81fb64db7",
+              "start_time": "2026-02-23T23:59:12.817325",
+              "end_time": "2026-02-24T02:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823136"
+            },
+            {
+              "id": "6c52d1f2-fa3a-443f-822a-6577aad19908",
+              "start_time": "2026-02-25T01:59:12.817325",
+              "end_time": "2026-02-25T03:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823227"
+            },
+            {
+              "id": "63857baa-3211-4f4b-bce3-0eaa9030ce2f",
+              "start_time": "2026-02-26T03:59:12.817325",
+              "end_time": "2026-02-26T05:59:12.817325",
+              "is_active": false,
+              "created_at": "2026-03-06T07:59:12.823276"
+            }
+          ],
+          "adjustments": [
+            {
+              "id": "3aebbe97-07df-49b2-b503-62e1c5f65d51",
+              "amount": 20.0,
+              "reason": "Minor quality issue in API error handling",
+              "adjustment_type": "DEDUCTION",
+              "created_at": "2026-03-06T07:59:12.823646"
+            }
+          ]
+        },
+        {
+          "id": "d1f9648b-5705-4448-9e4e-8fbec0804d54",
+          "user_id": "3f99ee5e-266c-4a69-b820-fecc2d2dbc0c",
+          "title": "Unit Test Suite",
+          "description": "Writing comprehensive unit tests for payment module",
+          "created_at": "2026-03-01T07:59:12.817325",
+          "amount": 120.0,
+          "remittance_status": "REMITTED",
+          "time_segments": [
+            {
+              "id": "04fa48e1-0cc3-49fc-b4f8-b4696c60173c",
+              "start_time": "2026-02-28T21:59:12.817325",
+              "end_time": "2026-03-01T01:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823328"
+            }
+          ],
+          "adjustments": []
+        },
+        {
+          "id": "f69f4063-2323-4210-ba4c-55d48a010f48",
+          "user_id": "a4383343-b2ee-43bb-930f-67c2421d5ecc",
+          "title": "Database Schema Redesign",
+          "description": "Migrating from legacy schema to normalized design",
+          "created_at": "2026-02-26T07:59:12.817325",
+          "amount": 410.0,
+          "remittance_status": "REMITTED",
+          "time_segments": [
+            {
+              "id": "85285292-410a-4bea-b814-cfce31b3dcd5",
+              "start_time": "2026-02-25T22:59:12.817325",
+              "end_time": "2026-02-26T03:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823371"
+            },
+            {
+              "id": "08f82c2e-682b-42cf-ac82-495e95a1d988",
+              "start_time": "2026-02-27T00:59:12.817325",
+              "end_time": "2026-02-27T03:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823412"
+            }
+          ],
+          "adjustments": [
+            {
+              "id": "d4939137-9d93-41df-bc4d-6ad950ee50c2",
+              "amount": 50.0,
+              "reason": "Early delivery bonus",
+              "adjustment_type": "BONUS",
+              "created_at": "2026-03-06T07:59:12.823710"
+            }
+          ]
+        },
+        {
+          "id": "1732c503-8b89-495d-b91c-e2fa246c2b5c",
+          "user_id": "a4383343-b2ee-43bb-930f-67c2421d5ecc",
+          "title": "Performance Optimization",
+          "description": "Optimizing slow queries and adding caching layer",
+          "created_at": "2026-03-03T07:59:12.817325",
+          "amount": 90.0,
+          "remittance_status": "REMITTED",
+          "time_segments": [
+            {
+              "id": "bf368b7a-4e56-413d-a5f3-9624d6eee677",
+              "start_time": "2026-03-03T01:59:12.817325",
+              "end_time": "2026-03-03T03:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823453"
+            }
+          ],
+          "adjustments": []
+        },
+        {
+          "id": "b5c322fb-4faa-4dac-a9f0-b2960d3e890f",
+          "user_id": "9846c3df-d3fd-473a-be4f-eae6365bd365",
+          "title": "Security Audit Report",
+          "description": "Conducting security audit and documenting findings",
+          "created_at": "2026-02-27T07:59:12.817325",
+          "amount": 320.0,
+          "remittance_status": "REMITTED",
+          "time_segments": [
+            {
+              "id": "3852562e-8821-4883-b14d-4bc98f3b679e",
+              "start_time": "2026-02-26T23:59:12.817325",
+              "end_time": "2026-02-27T03:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823492"
+            },
+            {
+              "id": "2b84c3db-603a-439f-a6b5-e828a5402e86",
+              "start_time": "2026-02-28T00:59:12.817325",
+              "end_time": "2026-02-28T03:59:12.817325",
+              "is_active": true,
+              "created_at": "2026-03-06T07:59:12.823533"
+            }
+          ],
+          "adjustments": [
+            {
+              "id": "ebf653bf-48c7-4efc-a774-ee87262b05e5",
+              "amount": 30.0,
+              "reason": "Incomplete compliance section",
+              "adjustment_type": "DEDUCTION",
+              "created_at": "2026-03-06T07:59:12.823753"
+            }
+          ]
+        }
+      ],
+      "count": 5
+    }
+  },
+  "list_worklogs_unremitted": {
+    "status_code": 200,
+    "body": {
+      "data": [],
+      "count": 0
+    }
+  }
+}
